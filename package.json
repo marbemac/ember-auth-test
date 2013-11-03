@@ -1,0 +1,31 @@
+{
+  "name": "ember-auth-test",
+  "description": "",
+  "keywords": [],
+  "version": "0.0.0",
+  "private": false,
+  "main": "server.coffee",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "coffee server.coffee",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "express": "latest",
+    "jade": "latest",
+    "coffee-script": "latest",
+    "javascript-brunch": "~1.7.0",
+    "coffee-script-brunch": "~1.7.2",
+    "css-brunch": "~1.7.0",
+    "stylus-brunch": "~1.7.0",
+    "uglify-js-brunch": "~1.7.2",
+    "clean-css-brunch": "~1.6.0",
+    "auto-reload-brunch": "~1.7.0",
+    "ember-handlebars-brunch": "~1.0.0",
+    "gzip-brunch": "~1.0.0"
+  },
+  "devDependencies": {}
+}

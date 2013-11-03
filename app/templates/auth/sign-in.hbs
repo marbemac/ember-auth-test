@@ -1,0 +1,7 @@
+<form submit='signIn' {{bindAttr class=':signup-form error:shake'}}>
+  {{view Ember.TextField valueBinding="login" placeholder='Email' required='required'}}
+  {{view Ember.TextField type='password' valueBinding="password" placeholder='Password' required='required'}}
+	<button class='signup-form__submit js-submit' {{action 'signIn'}}>
+    Sign In
+	</button>
+</form>

@@ -1,0 +1,49 @@
+<div class='master-nav flip-container'>
+  {{#if auth.signedIn}}
+    {{#linkTo 'index' class='master-nav__icon master-nav__1'}}
+		  <div class='master-nav__flipper'>
+			  <div class="master-nav__icon__front">
+				  <i class="fa fa-home"></i>
+			  </div>
+			  <div class="master-nav__icon__back">
+				  {{auth.user.username}}
+			  </div>
+		  </div>
+    {{/linkTo}}
+
+    {{#linkTo 'channels' class='master-nav__icon master-nav__2'}}
+		  <div class='master-nav__flipper'>
+			  <div class="master-nav__icon__front">
+				  <i class="fa fa-dot-circle-o"></i>
+			  </div>
+			  <div class="master-nav__icon__back">
+				  channels
+			  </div>
+		  </div>
+    {{/linkTo}}
+
+    {{#linkTo 'me' class='master-nav__icon master-nav__3'}}
+			<div class='master-nav__flipper'>
+				<div class="master-nav__icon__front">
+					<i class="fa fa-user"></i>
+				</div>
+				<div class="master-nav__icon__back">
+					me
+				</div>
+			</div>
+    {{/linkTo}}
+
+    {{render 'auth/sign-out'}}
+  {{else}}
+    <a href='/' class='master-nav__icon master-nav__1'>
+	    <div class='master-nav__flipper'>
+		    <div class="master-nav__icon__front">
+			    <i class="fa fa-home"></i>
+		    </div>
+		    <div class="master-nav__icon__back">
+			    home
+		    </div>
+	    </div>
+    </a>
+  {{/if}}
+</div>
